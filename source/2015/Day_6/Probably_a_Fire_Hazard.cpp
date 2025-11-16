@@ -57,7 +57,7 @@ Lights::Lights(bool initial_state) {
 
     for (int i = 0; i < 1000; i++) {
 
-        for (int j = 0; j <= 1000; j++) {
+        for (int j = 0; j < 1000; j++) {
 
             lights[i][j] = initial_state;
 
@@ -145,7 +145,7 @@ LightsWithBrightnessControls::LightsWithBrightnessControls(int initial_state) {
 
         lights[i] = new int[1000];
 
-        for (int j = 0; j <= 1000; j++) {
+        for (int j = 0; j < 1000; j++) {
 
             lights[i][j] = initial_state;
 
