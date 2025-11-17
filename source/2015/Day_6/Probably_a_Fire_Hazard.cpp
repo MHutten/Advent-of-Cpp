@@ -73,9 +73,7 @@ void Lights::turn_on(const int start[2], const int end[2]) {
 
         for (int j = start[1]; j <= end[1]; j++) {
 
-            if (lights[i][j] == false) {
-                lights[i][j] = true;
-            }
+            lights[i][j] = true;
 
         }
 
@@ -89,11 +87,7 @@ void Lights::toggle(const int start[2], const int end[2]) {
 
         for (int j = start[1]; j <= end[1]; j++) {
 
-            if (lights[i][j] == false) {
-                lights[i][j] = true;
-            } else {
-                lights[i][j] = false;
-            }
+            lights[i][j] = !lights[i][j];
 
         }
 
@@ -107,9 +101,7 @@ void Lights::turn_off(const int start[2], const int end[2]) {
 
         for (int j = start[1]; j <= end[1]; j++) {
 
-            if (lights[i][j] == true) {
-                lights[i][j] = false;
-            }
+            lights[i][j] = false;
 
         }
 
