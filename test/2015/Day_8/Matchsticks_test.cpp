@@ -2,7 +2,7 @@
 #include "../../../include/testing/asserts.hpp"
 #include "../../../include/testing/suite.hpp"
 
-struct TestOutput test__calculate_memory_length__good_weather__quote_backslash_quote() {
+struct TestOutput test__calculate_memory_length__good_weather__quote_quote() {
     struct TestOutput output = {
         __func__,
         assert_equal(calculate_memory_length("\"\""), 0)
@@ -34,7 +34,7 @@ struct TestOutput test__calculate_memory_length__good_weather__quote_backslash_x
     return output;
 }
 
-struct TestOutput test__calculate_encoded_length__good_weather__quote_backslash_quote() {
+struct TestOutput test__calculate_encoded_length__good_weather__quote_quote() {
     struct TestOutput output = {
         __func__,
         assert_equal(calculate_encoded_length("\"\""), 6)
@@ -73,11 +73,11 @@ class MatchsticksTestSuite : public TestSuite {
         MatchsticksTestSuite() {
 
             vector<TestFunction> temp_vector = {
-                &test__calculate_memory_length__good_weather__quote_backslash_quote,
+                &test__calculate_memory_length__good_weather__quote_quote,
                 &test__calculate_memory_length__good_weather__quote_abc_quote,
                 &test__calculate_memory_length__good_weather__quote_aaa_backslash_quote_aaa_quote,
                 &test__calculate_memory_length__good_weather__quote_backslash_x27_quote,
-                &test__calculate_encoded_length__good_weather__quote_backslash_quote,
+                &test__calculate_encoded_length__good_weather__quote_quote,
                 &test__calculate_encoded_length__good_weather__quote_abc_quote,
                 &test__calculate_encoded_length__good_weather__quote_aaa_backslash_quote_aaa_quote,
                 &test__calculate_encoded_length__good_weather__quote_backslash_x27_quote
