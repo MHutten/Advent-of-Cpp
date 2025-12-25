@@ -1,12 +1,6 @@
-#include <iostream>
-#include <fstream>
-
 #include "../../../include/2015/Day_1/Not_Quite_Lisp.hpp"
 #include "../../../include/testing/asserts.hpp"
 #include "../../../include/testing/suite.hpp"
-
-using std::cout;
-using std::endl;
 
 struct TestOutput test__calculate_santas_final_destination__good_weather__up_up_down_down() {
     struct TestOutput output = {
@@ -128,7 +122,7 @@ class NotQuiteLispTestSuite : public TestSuite {
 
 int main() {
     
-    NotQuiteLispTestSuite my_suite;
-    my_suite.run();
+    NotQuiteLispTestSuite suite;
+    suite.run();
 
 }

@@ -12,7 +12,9 @@ struct OperationData parse_operation_string(string operation_string);
 
 class Lights {
 
-    bool lights[1000][1000];
+    protected:
+
+        bool lights[1000][1000];
 
     public:
 
@@ -26,7 +28,9 @@ class Lights {
 
 class LightsWithBrightnessControls {
 
-    int ** lights;
+    protected:
+
+        int ** lights;
 
     public:
 
