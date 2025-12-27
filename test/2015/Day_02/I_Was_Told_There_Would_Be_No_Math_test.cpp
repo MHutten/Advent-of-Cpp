@@ -1,4 +1,4 @@
-#include "../../../include/2015/Day_2/I_Was_Told_There_Would_Be_No_Math.hpp"
+#include "../../../include/2015/Day_02/I_Was_Told_There_Would_Be_No_Math.hpp"
 #include "../../../include/testing/asserts.hpp"
 #include "../../../include/testing/suite.hpp"
 

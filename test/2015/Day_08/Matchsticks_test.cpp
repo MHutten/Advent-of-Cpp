@@ -1,4 +1,4 @@
-#include "../../../include/2015/Day_8/Matchsticks.hpp"
+#include "../../../include/2015/Day_08/Matchsticks.hpp"
 #include "../../../include/testing/asserts.hpp"
 #include "../../../include/testing/suite.hpp"
 

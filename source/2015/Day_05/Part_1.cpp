@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "../../../include/2015/Day_8/Matchsticks.hpp"
+#include "../../../include/2015/Day_05/Doesnt_He_Have_Intern-Elves_For_This.hpp"
 #include "../../../include/file.hpp"
 
 using std::cout;
@@ -14,14 +14,15 @@ using std::vector;
 int main (int argc, char *argv[]) {
 
     vector<string> lines = read_lines(argv[1]);
-    size_t difference = 0;
+    int number_of_nice_strings = 0;
 
     for (size_t index = 0; index < lines.size(); index++) {
-        difference += lines[index].length() - calculate_memory_length(lines[index]);
+
+        number_of_nice_strings += is_nice(lines[index]);
+        
     }
 
-    cout << difference << endl;
+    cout << number_of_nice_strings << endl;
 
     return 0;
-    
 }

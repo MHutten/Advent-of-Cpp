@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "../../../include/2015/Day_6/Probably_a_Fire_Hazard.hpp"
+#include "../../../include/2015/Day_06/Probably_a_Fire_Hazard.hpp"
 #include "../../../include/file.hpp"
 
 using std::cout;
